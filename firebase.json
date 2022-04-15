@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "chat-whatapps",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
