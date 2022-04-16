@@ -154,8 +154,9 @@ select {
 #demo {
     font-family: monospace;
     color: #222;
-    font-size: 14px;
-    font-weight: bold
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px auto;
 }
 
 .vi {
