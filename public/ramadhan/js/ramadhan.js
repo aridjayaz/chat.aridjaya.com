@@ -101,6 +101,7 @@ images[97] = "<img src='./img/gif/098.gif' />";
 images[98] = "<img src='./img/gif/099.gif' />";
 
 var img = Math.floor(Math.random() * images.length);
+img = Math.floor(img);
 
 // random text
 Quotation = new Array (0)
