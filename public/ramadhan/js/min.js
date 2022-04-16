@@ -1,12 +1,3 @@
-/* ganti gambar error */
-var images = document.querySelectorAll('img');
-for (var i = 0; i < images.length; i++) {
-    images[i].onerror = function () {
-        this.src = 'https://user-images.githubusercontent.com/26896268/163676016-96099229-d8af-42b8-8283-aa09f0e4c1df.png';
-    }
-}
-
-
 // title and thumbnail
 scriptRamadhan()
 
@@ -43,6 +34,14 @@ document.getElementById("share").onclick = function () {
     }
     window.open(randomPage());
 };
+
+/* ganti gambar error */
+var images = document.querySelectorAll('img');
+for (var i = 0; i < images.length; i++) {
+    images[i].onerror = function () {
+        this.src = 'https://user-images.githubusercontent.com/26896268/163676016-96099229-d8af-42b8-8283-aa09f0e4c1df.png';
+    }
+}
 
 /* anti ctrl */
 shortcut = {
