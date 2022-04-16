@@ -17,5 +17,5 @@ $(document).ready(function () {
 
 // share
 document.getElementById("share").onclick = function () {
-    window.open("whatsapp://send?text=*Marhaban ya Ramadhan*%0Ahttps://chat.aridjaya.com/ramadhan/index.html  %0A%0A*Saya telah mencobanya.. .*%0A%0A*Klik Tulisan Biru ini dan Ketik Namamu, maka kamu akan tahu ada keajaiban didalamnya*%0A👇👇👇%0Ahttps://chat.aridjaya.com/ramadhan%0A%0A*Gak di sangka, ternyata.... .😁👍*")
+    window.open("whatsapp://send?text=*Happy Ramadhan Kareem*%0Ahttps://chat.aridjaya.com/ramadhan  %0A%0AMarhaban ya Ramadhan%0A%0A*Klik Tulisan Biru ini dan Ketik Namamu, maka kamu akan tahu ada keajaiban didalamnya*%0A👇👇👇%0Ahttps://chat.aridjaya.com/ramadhan%0A%0A*Gak di sangka, ternyata.... .😁👍*")
 };
