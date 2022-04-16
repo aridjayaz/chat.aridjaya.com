@@ -24,9 +24,9 @@ $(document).ready(function () {
 document.getElementById("share").onclick = function () {
 
     var pages = [
-        "whatsapp://send?text=🌸 *Happy Ramadhan Kareem* %0A%0A_Klik tulisan biru ini dan ketik namamu, maka kamu akan tahu ada keajaiban didalamnya_ 👀%0A👇👇👇%0A💖 *Ramadhan Mubarak* 🙏%0Ahttps://chat.aridjaya.com/ramadhan%0A%0A_gak di sangka, ternyata..._ 🤭😚",
-        "whatsapp://send?text=☪️ *Happy Ramadhan Kareem* %0A%0A_Buktikan keajaiban di tautan biru ini_ %0A%0A_Ramadhan Mubarak_ 🙏%0A👉 https://chat.aridjaya.com/ramadhan",
-        "whatsapp://send?text=💖 *Happy Ramadhan Mubarak* %0A%0A_Lihatlah keajaiban di tautan biru ini_%0A👇🏻👇🏻👇🏻%0A☪️ *Ramadhan Kareem* %0Ahttps://chat.aridjaya.com/ramadhan",
+        "whatsapp://send?text=🌸 *Happy Ramadhan Kareem* 🌸%0A_Klik tulisan biru ini dan ketik namamu, maka kamu akan tahu ada keajaiban didalamnya_ 👀%0A👇👇👇%0A💖 *Ramadhan Mubarak* 🙏%0Ahttps://chat.aridjaya.com/ramadhan%0A%0A_gak di sangka, ternyata..._ 🤭😚",
+        "whatsapp://send?text=☪️ *Happy Ramadhan Kareem* ☪️%0A_Cobalah Buktikan keajaiban di tautan biru ini_ 👀%0A👇🏻👇🏻👇🏻%0A🌸 *Ramadhan Mubarak* 🙏%0Ahttps://chat.aridjaya.com/ramadhan",
+        "whatsapp://send?text=💖 *Happy Ramadhan Mubarak* 💖%0A_Lihatlah sebuah keajaiban di tautan biru ini_ 👀%0A👇🏻👇🏻👇🏻%0A☪️ *Ramadhan Kareem* %0Ahttps://chat.aridjaya.com/ramadhan",
     ];
 
     function randomPage() {
