@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 #container {
     text-align: center;
     max-width: 100%
@@ -717,7 +719,7 @@
 ._6klk {
     background-color: #fff;
     color: #282828;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     margin: 0;
     overflow-y: unset;
@@ -922,8 +924,8 @@
 }
 
 ._2ywk ._2y-f {
-    color: rgba(255, 255, 255, .6);
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 18px;
     line-height: 16px;
     width: 100%
 }
@@ -1484,11 +1486,11 @@
 
 ._2ywk ._2yzj ._2yzk,
 ._2ywk ._2yzj ._95r- {
-    color: rgba(255, 255, 255, .6);
-    font-size: 12px;
-    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
     letter-spacing: .08em;
-    line-height: 14px;
+    line-height: 15px;
     margin-bottom: 22px;
     text-transform: uppercase
 }
@@ -1629,7 +1631,7 @@
 ._2ywk ._1hg8 ._95r_,
 ._2ywk ._1hg8._1hg7 ._2y_4,
 ._2ywk ._1hg8._1hg7 ._95r_ {
-    color: #5b5f62;
+    color: #5E5E5E;
     font-size: 16px;
     line-height: 1.625
 }
@@ -1944,8 +1946,8 @@
 }
 
 ._2ywk ._8cis ._8cit {
-    color: #5b5f62;
-    font-size: 16px;
+    color: #5E5E5E;
+    font-size: 18px;
     font-weight: normal;
     line-height: normal;
     margin-bottom: 24px
@@ -1953,7 +1955,7 @@
 
 ._2ywk ._6jg7 {
     color: #5e5e5e;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     margin-top: 45px;
     text-align: center
@@ -3591,18 +3593,17 @@
 ._2ywk ._6kll ._6klo ._5_vc ._4k8q ._inf._2qix:active,
 ._2ywk ._6kll ._6klo ._5_vc ._4k8q ._inf._2qix:focus,
 ._2ywk ._6kll ._6klo ._5_vc ._4k8q ._inf._2qix:visited {
-    background: #01e675
+    background: #128c7e
 }
 
 ._2ywk ._2y_c {
     border-radius: 40px;
     display: inline-block;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: .071em;
     line-height: 19px;
     padding: 18px 32px;
-    text-transform: uppercase;
     white-space: nowrap
 }
 
@@ -3626,12 +3627,12 @@
 }
 
 ._2ywk ._2z07 {
-    background-color: #01e675;
+    background-color: #128c7e;
     color: #fff !important
 }
 
 ._2ywk ._2z08 {
-    background-color: #cdcdcd;
+    background-color: #eeeeee;
     color: #fff !important
 }
 
@@ -3669,14 +3670,13 @@
 }
 
 ._2ywk ._2z0c {
-    border-radius: 5px;
+    border-radius: 40px;
     display: inline-block;
-    font-size: 15px;
-    font-weight: bold;
-    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
     letter-spacing: .02em;
     line-height: 20px;
-    padding: 10px 35px;
+    padding: 16px 32px;
     white-space: nowrap
 }
 
@@ -3691,8 +3691,8 @@
     ._2ywk ._2y_c,
     ._2ywk ._2z0a,
     ._2ywk ._2z06 {
-        font-size: 13px;
-        font-weight: 600;
+        font-size: 17px;
+        font-weight: 400;
         letter-spacing: .005em;
         line-height: normal;
         padding: 10px 24px;
@@ -3730,7 +3730,7 @@
 
 @media (min-width: 768px) {
     ._2ywk ._68mt ._2zry ._-pk label {
-        color: #5b5f62;
+        color: #5E5E5E;
         font-size: 16px;
         line-height: 26px
     }
@@ -4253,7 +4253,7 @@
 }
 
 ._2ywk ._2yzv a {
-    color: #5b5f62
+    color: #5E5E5E
 }
 
 ._2ywk ._2yzv *:last-child {
@@ -4458,7 +4458,7 @@
 
 ._2ywk ._2zbh {
     display: inline-block;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: .02em;
     line-height: 20px;
@@ -5643,7 +5643,7 @@
 
 @media (max-width: 767px) {
     ._2ywk ._2yzf {
-        background-color: #1ebea5;
+        background-color: #128c7e;
         color: #fff;
         text-align: center
     }
@@ -5981,7 +5981,7 @@
     }
 
     ._2ywk ._2zox ._2zob {
-        color: #5b5f62
+        color: #5E5E5E
     }
 }
 
@@ -6197,7 +6197,7 @@
 ._2ywk ._2y_d label,
 ._2ywk ._2y_d input,
 ._2ywk ._2y_d button {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 ._2ywk ._8z0d {
@@ -6222,8 +6222,8 @@
 }
 
 ._2ywk ._8z0d>select {
-    background-color: #01e675;
-    border-color: #01e675;
+    background-color: #128c7e;
+    border-color: #128c7e;
     border-radius: 10px 0 0 10px;
     color: #fff !important;
     font-weight: 500;
@@ -6303,7 +6303,7 @@
 }
 
 ._2ywk ._89cf ._6jg7 {
-    color: #5b5f62;
+    color: #5E5E5E;
     display: inline-block;
     line-height: 26px;
     margin-left: auto;
@@ -6782,7 +6782,7 @@
 }
 
 ._2ywk ._2zpl {
-    background-color: #1ebea5;
+    background-color: #128c7e;
     box-sizing: border-box;
     color: #fff;
     transition: background-color .5s ease;
@@ -7015,8 +7015,8 @@
 
 ._2ywk ._2zbh {
     display: inline-block;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     letter-spacing: .02em;
     line-height: 20px;
     margin-left: 4px;
@@ -7162,7 +7162,7 @@
 }
 
 ._2ywk ._2zpl {
-    background-color: #1ebea5;
+    background-color: #128c7e;
     box-sizing: border-box;
     color: #fff;
     transition: background-color .5s ease;
@@ -7237,7 +7237,7 @@
 }
 
 ._2ywk ._2zq_ {
-    background-image: url(https://z-p3-static.xx.fbcdn.net/rsrc.php/yv/r/-r3j-x8ZnM7.svg);
+    background-image: url(https://static.whatsapp.net/rsrc.php/ym/r/36B424nhiL4.svg);
     background-repeat: no-repeat;
     display: block;
     float: left
@@ -7268,7 +7268,7 @@
     ._2ywk ._2zq_ {
         background-size: auto 39px;
         height: 49px;
-        width: 148px
+        width: 170px
     }
 }
 
@@ -8752,7 +8752,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 }
 
 ._2ywk ._2yyz {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: .02em;
     line-height: 20px;
@@ -9312,7 +9312,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 }
 
 ._2ywk ._8eaj ._8eal {
-    color: #5b5f62;
+    color: #5E5E5E;
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 34px
@@ -10518,7 +10518,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 ._2yz0 ._1hg8 ._95r_,
 ._2yz0 ._1hg8._1hg7 ._2y_4,
 ._2yz0 ._1hg8._1hg7 ._95r_ {
-    color: #5b5f62;
+    color: #5E5E5E;
     font-size: 16px;
     line-height: 1.625
 }
@@ -10833,7 +10833,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 }
 
 ._2yz0 ._8cis ._8cit {
-    color: #5b5f62;
+    color: #5E5E5E;
     font-size: 16px;
     font-weight: normal;
     line-height: normal;
@@ -12480,7 +12480,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 ._2yz0 ._6kll ._6klo ._5_vc ._4k8q ._inf._2qix:active,
 ._2yz0 ._6kll ._6klo ._5_vc ._4k8q ._inf._2qix:focus,
 ._2yz0 ._6kll ._6klo ._5_vc ._4k8q ._inf._2qix:visited {
-    background: #01e675
+    background: #128c7e
 }
 
 ._2yz0 ._2y_c {
@@ -12515,7 +12515,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 }
 
 ._2yz0 ._2z07 {
-    background-color: #01e675;
+    background-color: #128c7e;
     color: #fff !important
 }
 
@@ -12614,7 +12614,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 
 @media (min-width: 768px) {
     ._2yz0 ._68mt ._2zry ._-pk label {
-        color: #5b5f62;
+        color: #5E5E5E;
         font-size: 16px;
         line-height: 26px
     }
@@ -13136,7 +13136,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 }
 
 ._2yz0 ._2yzv a {
-    color: #5b5f62
+    color: #5E5E5E
 }
 
 ._2yz0 ._2yzv *:last-child {
@@ -14526,7 +14526,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 
 @media (max-width: 767px) {
     ._2yz0 ._2yzf {
-        background-color: #1ebea5;
+        background-color: #128c7e;
         color: #fff;
         text-align: center
     }
@@ -14864,7 +14864,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
     }
 
     ._2yz0 ._2zox ._2zob {
-        color: #5b5f62
+        color: #5E5E5E
     }
 }
 
@@ -15080,7 +15080,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 ._2yz0 ._2y_d label,
 ._2yz0 ._2y_d input,
 ._2yz0 ._2y_d button {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif
 }
 
 ._2yz0 ._8z0d {
@@ -15105,8 +15105,8 @@ html[lang="ar"] ._2ywk .rich-text ol,
 }
 
 ._2yz0 ._8z0d>select {
-    background-color: #01e675;
-    border-color: #01e675;
+    background-color: #128c7e;
+    border-color: #128c7e;
     border-radius: 10px 0 0 10px;
     color: #fff !important;
     font-weight: 500;
@@ -15186,7 +15186,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 }
 
 ._2yz0 ._89cf ._6jg7 {
-    color: #5b5f62;
+    color: #5E5E5E;
     display: inline-block;
     line-height: 26px;
     margin-left: auto;
@@ -15665,7 +15665,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 }
 
 ._2yz0 ._2zpl {
-    background-color: #1ebea5;
+    background-color: #128c7e;
     box-sizing: border-box;
     color: #fff;
     transition: background-color .5s ease;
@@ -16045,7 +16045,7 @@ html[lang="ar"] ._2ywk .rich-text ol,
 }
 
 ._2yz0 ._2zpl {
-    background-color: #1ebea5;
+    background-color: #128c7e;
     box-sizing: border-box;
     color: #fff;
     transition: background-color .5s ease;

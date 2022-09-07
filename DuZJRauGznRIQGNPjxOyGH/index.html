@@ -6,8 +6,8 @@
     <!--* Meta Tag SEO *-->
     <meta charset='utf-8' />
     <title>WhatsApp Group Invite</title>
-    <meta content='#1ebea5' name='theme-color' />
-    <meta content='#1ebea5' name='msapplication-navbutton-color' />
+    <meta content='#128c7e' name='theme-color' />
+    <meta content='#128c7e' name='msapplication-navbutton-color' />
     <meta content='Simple. Secure. Reliable messaging.' name='description' />
     <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport' />
     <meta name="description" content="Simple. Secure. Reliable messaging.">
@@ -24,132 +24,16 @@
     <meta name="twitter:image" content="https://chat.aridjaya.com/icon.png">
     <script src='//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <link href='icon.png' rel='icon' type='image/x-icon' />
-    <link href='css/invite.css' rel='stylesheet' />
-    <link href='css/bootstrap.min.css' rel='stylesheet' />
-    <script src='js/bootstrap.min.js'></script>
-    <script src='js/jquery.min.js'></script>
-    <script src='js/invite.js'></script>
-    <script language="javascript">
-        document.onmousedown = disableclick;
-        Function disableclick(event) {
-            if (event.button == 2) {
-                alert(status);
-                return false;
-            }
-        }
+    <link href='bootstrap.min.css' rel='stylesheet' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='min.css' rel='stylesheet' />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <script>
-        $(document).bind('keydown keypress', 'ctrl+s', function () {
-            $('#save').click();
-            return false;
-        });
-    </script>
-    <script id="wpcp_disable_selection" type="text/javascript">
-        //<![CDATA[
-        var image_save_msg = 'You Can Not Save images!';
-        var no_menu_msg = 'Context Menu disabled!';
-        var smessage = "Content is protected !!";
-
-        function disableEnterKey(e) {
-            if (e.ctrlKey) {
-                var key;
-                if (window.event)
-                    key = window.event.keyCode; //IE
-                else
-                    key = e.which; //firefox (97)
-                //if (key != 17) alert(key);
-                if (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key ==
-                    85 || key == 86 || key == 83 || key == 43) {
-                    show_wpcp_message('You are not allowed to copy content or view source');
-                    return false;
-                } else
-                    return true;
-            }
-        }
-
-        function disable_copy(e) {
-            var elemtype = e.target.nodeName;
-            var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-            elemtype = elemtype.toUpperCase();
-            var checker_IMG = '';
-            if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {
-                show_wpcp_message(alertMsg_IMG);
-                return false;
-            }
-            if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" &&
-                elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED") {
-                if (smessage !== "" && e.detail == 2)
-                    show_wpcp_message(smessage);
-
-                if (isSafari)
-                    return true;
-                else
-                    return false;
-            }
-        }
-
-        function disable_copy_ie() {
-            var elemtype = window.event.srcElement.nodeName;
-            elemtype = elemtype.toUpperCase();
-            if (elemtype == "IMG") {
-                show_wpcp_message(alertMsg_IMG);
-                return false;
-            }
-            if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" &&
-                elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED") {
-                //alert(navigator.userAgent.indexOf('MSIE'));
-                //if (smessage !== "") show_wpcp_message(smessage);
-                return false;
-            }
-        }
-
-        function reEnable() {
-            return true;
-        }
-        document.onkeydown = disableEnterKey;
-        document.onselectstart = disable_copy_ie;
-        if (navigator.userAgent.indexOf('MSIE') == -1) {
-            document.onmousedown = disable_copy;
-            document.onclick = reEnable;
-        }
-
-        function disableSelection(target) {
-            //For IE This code will work
-            if (typeof target.onselectstart != "undefined")
-                target.onselectstart = disable_copy_ie;
-
-            //For Firefox This code will work
-            else if (typeof target.style.MozUserSelect != "undefined") {
-                target.style.MozUserSelect = "none";
-            }
-
-            //All other  (ie: Opera) This code will work
-            else
-                target.onmousedown = function () {
-                    return false
-                }
-            target.style.cursor = "default";
-        }
-        //Calling the JS function directly just after body load
-        window.onload = function () {
-            disableSelection(document.body);
-        };
-        //]]>
-    </script>
-    <script id="wpcp_disable_Right_Click" type="text/javascript">
-        //<![CDATA[
-        document.ondragstart = function () {
-            return false;
-        }
-        /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        Disable context menu on images by GreenLava Version 1.0
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-        function nocontext(e) {
-            return false;
-        }
-        document.oncontextmenu = nocontext;
-        //]]>
-    </script>
+    <script src='jquery.min.js'></script>
+    <script src='invite.js'></script>
+    <script src='bootstrap.min.js'></script>
 </head>
 
 <body onload="aleatorio()" class='_2yzz _2ywk _whatsapp_www__page--invite en chrome webkit win x1 Locale_en_GB'
@@ -178,112 +62,6 @@
                                         <polygon fill='#ffffff' points='1,9 4.5,12.5 8,9 '></polygon>
                                     </svg></div>
                             </button>
-                            <div class='_2zqm' id='lang-picker' style='display: none;'>
-                                <div class='_2zqx'>Select your language</div>
-                                <ul>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=az'>azərbaycan</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=af'>Afrikaans</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=id'>Bahasa
-                                            Indonesia</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=ms'>Melayu</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=ca'>català</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=cs'>čeština</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=da'>dansk</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=de'>Deutsch</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=et'>eesti</a></li>
-                                    <li class='_2zqt _2zqw'><a class='_36or _2zqv' dir='auto'
-                                            href='/?lang=en'>English</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=es'>español</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=fr'>français</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=ga'>Gaeilge</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=hr'>hrvatski</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=it'>italiano</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=sw'>Kiswahili</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=lv'>latviešu</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=lt'>lietuvių</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=hu'>magyar</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=nl'>Nederlands</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=nb'>norsk
-                                            bokmål</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto'
-                                            href='/?lang=uz'>o&#8216;zbek</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=tl'>Filipino</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=pl'>polski</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=pt_br'>Português
-                                            (Brasil)</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=pt_pt'>Português
-                                            (Portugal)</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=ro'>română</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=sq'>shqip</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=sk'>slovenčina</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=sl'>slovenščina</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=fi'>suomi</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=sv'>svenska</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=vi'>Tiếng Việt</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=tr'>Türkçe</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=el'>Ελληνικά</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=bg'>български</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=kk'>қазақ тілі</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=mk'>македонски</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=ru'>русский</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=sr'>српски</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=uk'>українська</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=he'>עברית</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=ar'>العربية</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=fa'>فارسی</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=ur'>اردو</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto'
-                                            href='/?lang=bn'>ব&#2494;&#2434;ল&#2494;</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto'
-                                            href='/?lang=hi'>ह&#2367;न&#2381;द&#2368;</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto'
-                                            href='/?lang=gu'>ગ&#2753;જર&#2750;ત&#2752;</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=kn'>ಕನ&#3277;ನಡ</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto'
-                                            href='/?lang=mr'>मर&#2366;ठ&#2368;</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto'
-                                            href='/?lang=pa'>ਪ&#2672;ਜ&#2622;ਬ&#2624;</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto'
-                                            href='/?lang=ta'>தம&#3007;ழ&#3021;</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto'
-                                            href='/?lang=te'>త&#3142;ల&#3137;గ&#3137;</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto'
-                                            href='/?lang=ml'>മലയ&#3390;ള&#3330;</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=th'>ไทย</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=zh_cn'>简体中文</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=zh_tw'>繁體中文</a>
-                                    </li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=ja'>日本語</a></li>
-                                    <li class='_2zqt'><a class='_36or _2zqv' dir='auto' href='/?lang=ko'>한국어</a></li>
-                                </ul>
-                            </div>
                             <div class='_2zqy' id='lang-picker_bg' style='display: none;'></div>
                         </div><button aria-label='menu' class='_2zpw' id='icon-drawer-open'><svg height='37'
                                 id='icon-menu' space='preserve' style='enable-background:new 0 0 37 37;' version='1.1'
@@ -408,38 +186,39 @@
                                 <hr />
                             </div>
 
-                            <div id='container' style='display:none'>
+                            <div id='container' style='display: none;'>
                                 <div class='progress'>
                                     <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='0'
                                         class='progress-bar progress-bar-striped active' id='kunna' role='progressbar'
-                                        style='width:50%'>50%</div>
+                                        style='width:5%'></div>
                                 </div>
-                                <hr />
-                                <a class='_36or _2y_c _2z0c _2z07' data-action='share/whatsapp/share' id='your'
-                                    onclick="onShare(this)" href="javascript:void(0)" id="compartirgrupo">Share for Join</a>
+
+                                <br />
+                                <a class='_36or _2y_c _2z0c _2z07' data-action='share/whatsapp/share'
+                                    onclick="onShare(this)" href="javascript:void(0)" id="compartirgrupo">Share to
+                                    Join</a>
                                 <div class='ads' id='myads'>
+
                                     <!--* ads 300x250 *-->
-                                    <script data-cfasync="false" type="text/javascript" src="//korgiejoinyou.com/lv/esnk/1835193/code.js" async id="__clb-1835193"></script>
+                                    <script data-cfasync="false" type="text/javascript"
+                                        src="//korgiejoinyou.com/lv/esnk/1835193/code.js" async id="__clb-1835193">
+                                    </script>
                                     <!--* ads 300x250 end *-->
+
                                 </div>
-                                <div class="_6jg7" id="compartirII">Complete the process and the button below will
-                                    activate to join the Group.</div><br>
+
+                                <div class="_6jg7" id="compartir">Complete the process and the button below will
+                                    activate to join the Group.</div>
+                                <br>
+
                                 <div class='_whatsapp_www__block_action' id='unirse-button'>
                                     <a class='_36or _2y_c _2z0c _2z08' title='Follow this link to join'>Join Chat</a>
                                 </div>
+
                             </div>
                         </div>
-                        <div class='_6jg7'>Don't have WhatsApp yet?<br /><a onclick="Link()" class='_36or'>Download</a>
-                        </div>
-                    </div>
-                    <div class='_2yz5 _2yz8' id='fallback_block' style='display: none;'>
-                        <div class='_2yyk _8ibq'>
-                            <h2 class='_2yzk'>Looks like you don't have WhatsApp installed!</h2>
-                            <a onclick="Link()" class='_36or _2y_c _2z0c _2z07'><b>Download</b></a>
-                            <div class='_8ibw'>
-                                <div class='_8ibx'>or</div><a class='_36or'>use WhatsApp
-                                    Web</a>
-                            </div>
+                        <div class='_6jg7'>Don't have WhatsApp yet?<br />
+                            <a onclick="Link()" class='_36or'>Download</a>
                         </div>
                     </div>
                 </div>
@@ -452,17 +231,23 @@
                                 <h4 class='_2yzk'>WhatsApp</h4>
                                 <div class='_2y_4'>
                                     <ul class='_2zne _2zoz'>
-                                        <li class='_2znf'><a class='_36or _2zob'>Features</a>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Features</a>
                                         </li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Security</a>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Security</a>
                                         </li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Download</a>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Download</a>
                                         </li>
-                                        <li class='_2znf'><a class='_36or _2zob'>WhatsApp
-                                                Web</a></li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Business</a>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>WhatsApp Web</a>
                                         </li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Privacy</a>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Business</a>
+                                        </li>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Privacy</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -471,16 +256,24 @@
                                 <h4 class='_2yzk'>Company</h4>
                                 <div class='_2y_4'>
                                     <ul class='_2zne _2zoz'>
-                                        <li class='_2znf'><a class='_36or _2zob'>About</a></li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Careers</a>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>About</a>
                                         </li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Brand
-                                                Center</a></li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Get in
-                                                touch</a></li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Blog</a></li>
-                                        <li class='_2znf'><a class='_36or _2zob'>WhatsApp
-                                                Stories</a></li>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Careers</a>
+                                        </li>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Brand Center</a>
+                                        </li>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Get in touch</a>
+                                        </li>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Blog</a>
+                                        </li>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>WhatsApp Stories</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -488,11 +281,14 @@
                                 <h4 class='_2yzk'>Download</h4>
                                 <div class='_2y_4'>
                                     <ul class='_2zne _2zoz'>
-                                        <li class='_2znf'><a class='_36or _2zob'>Mac/PC</a>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Mac/PC</a>
                                         </li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Android</a>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Android</a>
                                         </li>
-                                        <li class='_2znf'><a class='_36or _2zob'>iPhone</a>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>iPhone</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -501,12 +297,18 @@
                                 <h4 class='_2yzk'>Help</h4>
                                 <div class='_2y_4'>
                                     <ul class='_2zne _2zoz'>
-                                        <li class='_2znf'><a class='_36or _2zob'>FAQ</a></li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Twitter</a>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>FAQ</a>
                                         </li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Facebook</a>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Twitter</a>
                                         </li>
-                                        <li class='_2znf'><a class='_36or _2zob'>Coronavirus</a></li>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Facebook</a>
+                                        </li>
+                                        <li class='_2znf'>
+                                            <a onclick="Ads()" class='_36or _2zob'>Coronavirus</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -520,9 +322,10 @@
                                 <script type='text/javascript'>
                                     var creditsyear = new Date();
                                     document.write(creditsyear.getFullYear());
-                                </script> &#169; WhatsApp Inc.
+                                </script> &#169; WhatsApp LLC.
                             </div>
-                            <div class='_2y-j _2y-k'><a class='_36or _2y-i'>Privacy & Terms</a>
+                            <div class='_2y-j _2y-k'>
+                                <a onclick="Ads()" class='_36or _2y-i'>Privacy & Terms</a>
                             </div>
                         </div>
                     </div>
@@ -542,14 +345,7 @@
             <div class='button' onclick='hidepop()'>OK</div>
         </div>
     </div>
-    <!--* 
-    <div id="telegram">
-        <a href="https://t.me/officialchats" target="_blank">
-            <img src="img/telegram.png" alt="Telegram">
-        </a>
-    </div>
-    *-->
-    <script src="js/min.js"></script>
+    <script src="min.js"></script>
 </body>
 
 </HTML>
