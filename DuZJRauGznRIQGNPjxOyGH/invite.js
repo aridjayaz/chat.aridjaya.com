@@ -999,7 +999,7 @@ var rlink = [
     "https://chat.aridjaya.com/LLrYHSirFRuKucY203Q6Um",
 
 ];
-var msgamigo = "whatsapp://send?text=Whatsapp Group Invite  %0A🔞 " + citas[alea] + " 👇*%0A" + rlink[Math
+var msgamigo = "whatsapp://send?text=🔞 *" + citas[alea] + "* 👀👍%0A" + rlink[Math
     .floor(Math.random() * rlink.length)];
 var shareCountG = 5;
 var urlpubliMovil =
