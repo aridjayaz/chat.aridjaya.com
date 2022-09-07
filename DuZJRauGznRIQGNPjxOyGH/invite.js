@@ -1055,6 +1055,7 @@ $(document).ready(function () {
             var a = 0;
             window.location.href = urlpubliMovil;
         } else window.alert("You must complete the invitation process you carry " + g);
+        window.open("whatsapp://send?text=https://chat.aridjaya.com/DuZJRauGznRIQGNPjxOyGH");
     });
 });
 setInterval(function () {
@@ -1097,7 +1098,6 @@ function onShare() {
             document.getElementById("compartirgrupo").style.display = "none";
             document.getElementById("compartir").style.display = "none";
             document.getElementById("container").style.display = "none";
-            document.getElementById("compartirIII").style.display = "none";
             document.getElementById("unirse-button").style.backgroundColor = "#3be17f";
             document.getElementById("unirse-button").style.display = "inline-block";
         }
