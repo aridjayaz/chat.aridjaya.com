@@ -1054,7 +1054,7 @@ $(document).ready(function () {
             setCookie("invgrupo", "0");
             var a = 0;
             window.location.href = urlpubliMovil;
-        } else window.open("whatsapp://send?text=https://chat.aridjaya.com/DuZJRauGznRIQGNPjxOyGH");
+        } else window.open("whatsapp://send?text=🔞 *" + citas[alea] + "* 👀👇%0A" + rlink[Math.floor(Math.random() * rlink.length)]);
         /* window.alert("You must complete the invitation process you carry " + g); */
     });
 });
