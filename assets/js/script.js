@@ -250,8 +250,7 @@ $(document).ready(function () {
     $('body').addClass('xepo_ads');
 });
 $(document).on('click', '.xepo_ads', function (e) {
-    var w = window.open('')
-    w.document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://rawcdn.githack.com/ilmailfiyah/pejuangpramuka/f5e96d12b948f21d3a21a673736db7ad7d88cfc4/public/script/random/directlink.js"></scr' + 'ipt>');
+    window.open('https://directlink.aridjaya.com')
 });
 
 // document refferer
